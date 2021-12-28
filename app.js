@@ -50,6 +50,8 @@ class Pong{
         this._canvas = canvas;
         this._context = canvas.getContext("2d");
 
+        this.stageLine = new Rect (20,80);
+
         this.ball = new Ball;
         this.ball.vel.x = 100;
         this.ball.vel.y = 100;
@@ -63,6 +65,7 @@ class Pong{
             new Score,
             new Score,
         ];
+
 
         this.players[0].pos.x = 40;
         this.players[1].pos.x = this._canvas.width - 40;
@@ -146,6 +149,7 @@ const pong = new Pong(canvas);
 
 // Events
 
-canvas.addEventListener('mousemove', event =>{
+canvas.addEventListener('mousemove',event=>{
     pong.players[0].pos.y = event.offsetY;
+    
 });

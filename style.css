@@ -1,0 +1,37 @@
+h1{
+    padding: 5rem 0rem;
+    text-align: center;
+}
+
+.game_scenario{    
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.pong_stage{
+    border-radius: 20px;
+}
+
+.middline{
+    position: absolute;
+    width: 5px;
+    height: 98.5%;
+    background: white;
+    top: 1%;
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+form button{
+    background: none;
+    margin: 1rem 3rem;
+    padding: 2rem;
+    border-radius: 5px;
+}
